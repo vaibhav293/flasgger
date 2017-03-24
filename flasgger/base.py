@@ -297,7 +297,7 @@ class APISpecsView(MethodView):
         paths = data['paths']
         definitions = data['definitions']
         ignore_verbs = set(
-            self.config.get('ignore_verbs', ("HEAD", "OPTIONS"))
+            self.config.get('ignore_verbs', ("OPTIONS"))
         )
 
         # technically only responses is non-optional
